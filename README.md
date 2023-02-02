@@ -1,14 +1,13 @@
 # Next.js TS Apollo Template
 
 - [Overview](#overview)
-- [Viewing the deployed application](#viewing-the-deployed-application)
-- [Documentation](#documentation)
-  - [Starting React Storybook](#starting-react-storybook)
+- [Directory Structure](#directory-structure)
 - [Running the Application Locally](#running-the-application-locally)
 - [Using Codespaces](#using-codespaces)
 - [Running Tests](#running-tests)
   - [Running Unit/Integration tests](#running-unitintegration-tests)
   - [Running End-to-End tests](#running-end-to-end-tests)
+- [Starting React Storybook](#starting-react-storybook)
 
 ## Overview
 
