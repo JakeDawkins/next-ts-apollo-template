@@ -8,6 +8,7 @@
   - [Running Unit/Integration tests](#running-unitintegration-tests)
   - [Running End-to-End tests](#running-end-to-end-tests)
 - [Starting React Storybook](#starting-react-storybook)
+- [Scripts Reference](#scripts-reference)
 
 ## Overview
 
@@ -146,3 +147,32 @@ npm run storybook
 
 Once up and running, go to [localhost:6006](http://localhost:6006) to see the
 app running.
+
+## Scripts Reference
+
+Using `yarn <command-name>`:
+
+**Development workflow**:
+
+- `dev`: Run app in development mode
+- `storybook`: Build and run React Storybook on port 6006
+- `generate:types`: Generate GraphQL types
+- `generate:types:watch`: Generate GraphQL types and rebuild on change
+- `lint`: Check project with ESLint
+
+**Testing**:
+
+- `test:unit`: Run jest tests in `components/` and `pages/`
+- `cypress:open`: Open the `Cypress` app locally for manually running e2e tests
+  - expects the app to be running on `localhost:3000` (`yarn dev`)
+- `cypress:run`: run all Cypress e2e tests
+  - expects the app to be running on `localhost:3000` (`yarn dev`)
+- `test:e2e:dev`: builds the app with `yarn dev` in the background and opens Cypress tests.
+
+**Deployment**:
+
+- `build`: Build app for production
+- `start`: Serve built production app
+- `build:storybook`: Build storybook for deploy
+- `chromatic`: Deploys storybook instance to Chromatic
+  - Expects project token set in this script in `package.json`
